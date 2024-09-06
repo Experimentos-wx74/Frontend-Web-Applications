@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from "@angular/common/http";
 
 // library lodash to clone objects
-import * as _ from 'lodash';
 import cloneDeep from 'lodash/cloneDeep';
 
 import { FormsModule } from "@angular/forms";

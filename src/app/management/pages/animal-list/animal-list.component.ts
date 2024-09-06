@@ -1,11 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router, RouterLink} from "@angular/router";
-import {AnimalApiService} from "../../services/animal-api.service";
 import {Animal} from "../../models/animal.model";
 import {NgForOf, NgIf} from "@angular/common";
 import {MatButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {forEach} from "lodash";
 import {AnimalCardComponent} from "../../components/animal-card/animal-card.component";
 import {CageApiService} from "../../services/cage-api.service";
 

@@ -52,6 +52,7 @@ export class NotificationsViewComponent implements OnInit{
   }
 
   getNotifications() {
+    // @ts-ignore
     this.userApiService.getNotificationsByUserId(this.user_id).subscribe((notifications: Notification[]) => {
       notifications.forEach((notification: Notification) => {
         // Create a new date object

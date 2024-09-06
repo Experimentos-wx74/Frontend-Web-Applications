@@ -4,9 +4,9 @@ import {HttpClient} from "@angular/common/http";
 
 //Import the user model
 import {User} from "../models/user.model";
-import {BaseService} from "../../../../../PLAGIOOOOLOCOO/src/app/shared/services/base.service";
-import {Notification} from "../../../../../PLAGIOOOOLOCOO/src/app/appointment/models/notification.model";
+
 import {catchError, Observable, tap} from "rxjs";
+import {BaseService} from "../../shared/services/base.service";
 
 @Injectable({
   providedIn: 'root'
