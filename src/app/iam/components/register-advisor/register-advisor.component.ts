@@ -85,9 +85,19 @@ export class RegisterAdvisorComponent {
   uploadImage(event: any) {
     if (event.target.files && event.target.files.length > 0) {
       const file = event.target.files[0];
+
+      // Comprobar si el archivo es un PNG
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      if (!allowedTypes.includes(file.type)) {
+        this.snackBar.open('Formato de archivo no soportado. Solo se permiten archivos PNG o JPEG.', 'Cerrar', {
+          duration: 3000,
+        });
+        return;
+      }
+
       this.selectedFileName = file.name;
       console.log(file);
-      let reader= new FileReader();
+      let reader = new FileReader();
       let name = "PROFILEPHOTO_IMAGE_" + Date.now();
       reader.readAsDataURL(file);
       reader.onloadend = () => {
@@ -99,6 +109,7 @@ export class RegisterAdvisorComponent {
       }
     }
   }
+
 
   onSubmit() {
     if (this.selectedFileName === '') {
