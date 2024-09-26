@@ -1,27 +1,28 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyDkROrKEzexzriGwyg94vvj76NjPqewV9E",
-    authDomain: "agroconnect-demo.firebaseapp.com",
-    projectId: "agroconnect-demo",
-    storageBucket: "agroconnect-demo.appspot.com",
-    messagingSenderId: "981172916098",
-    appId: "1:981172916098:web:1b8a0e8e722615fe7a499b"
+    apiKey: "AIzaSyA4RzVQ5SXfExHEwo_0JAWZcn7q-rZxq7w",
+    authDomain: "agroconnect-demo-8c7ab.firebaseapp.com",
+    projectId: "agroconnect-demo-8c7ab",
+    storageBucket: "agroconnect-demo-8c7ab.appspot.com",
+    messagingSenderId: "617590434096",
+    appId: "1:617590434096:web:9957e257ce9221b7bc00f5",
+    measurementId: "G-004GHXNHG9"
   },
-    baseURL: 'http://localhost:8080/swagger-ui/api/v1',
+  baseURL: 'https://agro-connect-web-services.onrender.com/api/v1',
 
-    //urls for the different endpoints
-    userURL: '/users',
-    authenticationURL: '/authentication',
-    advisorURL: '/advisors',
-    breederURL: '/breeders',
-    resourceURL: '/resources',
-    appointmentURL: '/appointments',
-    expenseURL: '/expenses',
-    notificationURL: '/notifications',
-    publicationURL: '/publications',
-    animalURL: '/animals',
-    cageURL: '/cages',
-    reviewURL: '/reviews',
-    availableDateURL: '/available-dates'
+  //urls for the different endpoints
+  userURL: '/users',
+  authenticationURL: '/authentication',
+  advisorURL: '/advisors',
+  breederURL: '/breeders',
+  resourceURL: '/resources',
+  appointmentURL: '/appointments',
+  expenseURL: '/expenses',
+  notificationURL: '/notifications',
+  publicationURL: '/publications',
+  animalURL: '/animals',
+  cageURL: '/cages',
+  reviewURL: '/reviews',
+  availableDateURL: '/available-dates'
 }
